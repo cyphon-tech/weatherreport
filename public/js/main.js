@@ -20,10 +20,14 @@ const getInfo =async(event)=>{
         try{
             let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=18308f58109ce279bc32c0096be00493`;
             const response=await fetch(url);
+            console.log("HERE 1");
             const data=await response.json();
+            
+            console.log("HERE 2");
             const arrData=[data];
 
 
+            console.log("HERE 3");
             // city_name.innerText=arrData[0].name;
             city_name.innerText=`${arrData[0].name},${arrData[0].sys.country}`;
 
