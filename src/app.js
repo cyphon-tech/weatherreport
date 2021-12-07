@@ -3,7 +3,7 @@ const path=require('path');
 const hbs=require('hbs');
 const app=express();
 require("./db/conn");
-const port=process.env.PORT||9000;
+const port=process.env.PORT||8000;
 
 // publlic static path
 const static_path=(path.join(__dirname,"../public"));
